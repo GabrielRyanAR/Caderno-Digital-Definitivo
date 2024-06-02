@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">GABRIEL©RYAN</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Página Inicial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cadernodigital.html">Caderno Digital</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <h1>Aula 4 - 2º Trimestre - Manual do Cubo Mágico</h1>
+
+      <li>R (Right): Gire a face direita no sentido horário.</li>
+      <li>R': Gire a face direita no sentido anti-horário.</li>
+      <li>L (Left): Gire a face esquerda no sentido horário.</li>
+      <li>L': Gire a face esquerda no sentido anti-horário.</li>
+      <li>U (Up): Gire a face superior no sentido horário.</li>
+      <li>U': Gire a face superior no sentido anti-horário.</li>
+      <li>D (Down): Gire a face inferior no sentido horário.</li>
+      <li>D': Gire a face inferior no sentido anti-horário.</li>
+      <li>F (Front): Gire a face frontal no sentido horário.</li>
+      <li>F': Gire a face frontal no sentido anti-horário.</li>
+      <li>B (Back): Gire a face traseira no sentido horário.</li>
+      <li>B': Gire a face traseira no sentido anti-horário.</li>
+
+      <h>Etapa 1: Resolver a Cruz Branca</h>
+      <p>1.Encontre a peça central branca: Ela será sua referência para montar a cruz branca.</p>
+      <p>2.Forme a cruz branca: Alinhe as peças de borda brancas ao redor da peça central branca, garantindo que os adesivos laterais correspondam às cores das peças centrais adjacentes.</p>
+
+      <h>Etapa 2: Resolver os Cantos Brancos</h>
+      <p>1.Posicione os cantos brancos: Localize um canto com adesivo branco e coloque-o abaixo do local correto na camada inferior.</p>
+      <p>2.Use o algoritmo correto: Se o adesivo branco estiver na face frontal direita, use o algoritmo:</p>
+      <li>R' D' R D</li>
+      <p>3.Repita até que todos os cantos brancos estejam no lugar correto e a face branca esteja completa.</p>
+
+      <h>Etapa 3: Resolver a Segunda Camada</h>
+      <p>1.Encontre as peças de borda da segunda camada: Elas são as peças sem adesivos amarelos.</p>
+      <p>2.Posicione as peças de borda: Use os seguintes algoritmos para mover as peças de borda da camada superior para a segunda camada:</p>
+      <li>Se a peça estiver na posição da direita: U R U' R' U' F' U F</li>
+      <li>Se a peça estiver na posição da esquerda: U' L' U L U F U' F'</li>
+
+      <h>Etapa 4: Formar a Cruz Amarela</h>
+      <p>1.Olhe para a face amarela: Pode haver várias configurações (ponto, linha, L, cruz).</p>
+      <p>2.Use o algoritmo adequado para formar a cruz amarela:</p>
+      <li>Para o ponto: F R U R' U' F'</li>
+      <li>Para a linha: F R U R' U' F'</li>
+      <li>Para o L: F U R U' R' F'</li>
+
+      <h>Etapa 5: Orientar os Cantos Amarelos</h>
+      <p>1.Posicione corretamente os cantos amarelos: Use o algoritmo para permutar os cantos até que estejam na posição correta (independentemente da orientação):</p>
+      <li>U R U' L' U R' U' L</li>
+
+      <h>Etapa 6: Finalizar o Cubo</h>
+      <p>Oriente os cantos amarelos corretamente: Use o algoritmo para girar os cantos até que o cubo esteja completo:</p>
+      <li>R' D' R D</li>
+      <p>Repita este algoritmo para cada canto até que todos estejam orientados corretamente.</p>
+
+      <h>Etapa Final: Permutar as Bordas da Camada Superior</h>
+      <p>1.Verifique as bordas da camada superior: Se as bordas não estiverem na posição correta, use o algoritmo de permutação:</p>
+      <li>R U R' U R U2 R' U</li>
+      <p>Repita este algoritmo até que todas as peças de borda estejam corretamente posicionadas e o cubo esteja resolvido.</p>
+
+      <h>Dicas Adicionais:</h>
+      <li>Pratique cada etapa separadamente: Isso ajudará você a memorizar os algoritmos.</li>
+      <li>Use recursos visuais: Existem muitos tutoriais em vídeo que podem ser úteis para ver os movimentos em ação.</li>
+      <li>Seja paciente: Resolver um cubo mágico pode ser desafiador no início, mas com prática, você ficará mais rápido e eficiente.</li>
+
+      <article> Boa Sorte !!!!! S2 S2</article>
+
+    </body>
+</html>
